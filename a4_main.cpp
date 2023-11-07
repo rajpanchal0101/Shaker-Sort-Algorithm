@@ -16,7 +16,7 @@
 int main() 
 {
     int n;
-    cout << "Enter the size of the vector: ";
+    cout << "\nEnter the size of the vector: ";
     cin >> n;
 
     //! Generates a vector of random nums
