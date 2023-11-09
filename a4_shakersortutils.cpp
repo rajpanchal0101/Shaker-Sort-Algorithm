@@ -5,7 +5,7 @@
 4) Purpose:This is the file which consists of implementation of the various functions declared in the header file.
 */
 
-#include "a4_header.h"
+#include "a4_header.h" 
 
 //! Shaker Sort function to sort the vector in ascending or descending order
 void shakerSort(vector<int> &arr, bool asc)
@@ -23,7 +23,7 @@ void shakerSort(vector<int> &arr, bool asc)
             {
                 if (arr[i] > arr[i + 1]) 
                 {
-                    swap(arr[i], arr[i + 1]); //! Swaps elements if they are out of order
+                    swap(arr[i], arr[i + 1]); //! Swaps elements if they are out of order and moves the larger elements to the end
                     swapped = true;
                 }
             }
@@ -38,7 +38,7 @@ void shakerSort(vector<int> &arr, bool asc)
             {
                 if (arr[i] < arr[i - 1]) 
                 {
-                    swap(arr[i], arr[i - 1]); //! Swaps elements if they are out of order
+                    swap(arr[i], arr[i - 1]); //! Swaps elements if they are out of order and moves the smaller elements to the front
                     swapped = true;
                 }
             }
