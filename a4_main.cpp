@@ -29,7 +29,7 @@ int main()
     }
 
     //! Saves the generated vector to a file
-    ofstream inputFile("input_file.txt");
+    ofstream inputFile("input_file.txt"); 
 
     for (int num : nums) 
     {
@@ -37,6 +37,18 @@ int main()
     }
 
     inputFile.close();
+
+    //! Reads the input vector from the "input_file.txt" file
+    ifstream inpReader("input_file.txt");
+    nums.clear();
+
+    int num;
+    while (inpReader >> num)
+    {
+        nums.push_back(num);
+    }
+
+    inpReader.close();
 
     //! Sorts the vector in ascending order
     vector<int> ascnums = nums;
